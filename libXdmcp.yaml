@@ -1,0 +1,20 @@
+Name: libXdmcp
+Summary: X.Org X11 libXdmcp runtime library
+Description: |
+  X Display Manager Control Protocol library
+Version: 1.1.0
+Release: 1
+Group: System/Libraries
+License: MIT
+URL: http://www.x.org/
+Sources:
+    - http://xorg.freedesktop.org/releases/individual/lib/%{name}-%{version}.tar.bz2
+
+PkgConfigBR:
+    - xproto
+SubPackages:
+    - Name: devel
+      Summary: Development components for the libXdmcp library
+      Description: X Display Manager Control Protocol library files.
+      Group: Development/Libraries
+
